@@ -1,0 +1,6 @@
+
+
+Dim sRet
+sRet = UiElement.GetAttribute(@ui"视频<video>_6","src",{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
+TracePrint($PrevResult)
+WebBrowser.Download(hWeb,sRet,'''C:\Users\wuchonghua\Desktop\Person\study\RPA\视频\第一集''',true,300000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})

@@ -1,0 +1,4 @@
+Dim sRet,objElement,arrElement,hWeb
+g_hWeb = WebBrowser.Create("chrome","https://www.dm295.com",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
+Keyboard.InputText(@ui"输入控件<input>1","咒术回战",true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+Mouse.Action(@ui"按钮<button>_搜索","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
