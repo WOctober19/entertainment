@@ -1,0 +1,3 @@
+Dim iRet
+
+iRet = Database.ExecuteSQL(g_db ,"update noval set status = 1 where id = %s", {"args": [g_incomplete_novel[1]]})

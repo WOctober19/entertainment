@@ -1,6 +1,6 @@
-Dim sRet,incomplete_first,g_db
+Dim sRet,incomplete_first,g_db,noval_link
 
-sRet = Database.CreateDB("MySQL",{"host": "127.0.0.1", "port": "3306", "user": "root","password": "9r0iKKr22/ey/48hS6FN/Q==","database": "entertainment","charset": "utf8"})
-incomplete_first = Database.QueryOne(sRet ,"select name,id from noval where status = 0 order by id", {"rdict": false, "args": []})
 
+
+noval_link = UiElement.DataScrap({"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":[{"tag":"DIV","id":"content"}]},{"ExtractTable":0,"Columns":[{"selecors":[{"tag":"table","index":0,"className":"grid","value":"table.grid","prefix":""},{"tag":"tbody","index":0,"className":"","value":"tbody","prefix":">"},{"tag":"tr","value":"tr","index":0,"prefix":">"},{"tag":"td","index":1,"className":"odd","value":"td:nth-child(1)","prefix":">"},{"tag":"a","index":0,"className":"","value":"a","prefix":">"}],"props":["text","url"]}]},{"objNextLinkElement":{"wnd":[{"cls":"Chrome_WidgetWin_1","title":"*","app":"chrome"},{"cls":"Chrome_RenderWidgetHostHWND","title":"Chrome Legacy Window"}],"html":[{"tag":"A","parentid":"pagelink","aaname":">>"}]},"iMaxNumberOfPage":1,"iMaxNumberOfResult":-1,"iDelayBetweenMS":1000,"bContinueOnError":False})
 TracePrint($PrevResult)

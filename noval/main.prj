@@ -84,11 +84,44 @@
                 "height": 64
             },
             "caption": "小说章节",
-            "next": {},
+            "next": {
+                "vertices": [],
+                "refId": "cb768ce7-1687-4ae5-9bcd-d6472bb09b39"
+            },
             "exception": {},
             "file": "noval_chapter.task",
-            "editorMode": "sourceCode",
+            "editorMode": "visual",
             "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "cb768ce7-1687-4ae5-9bcd-d6472bb09b39",
+            "rect": {
+                "x": 772,
+                "y": 594,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "小说结束",
+            "next": {
+                "vertices": [],
+                "refId": "2c3bcdb5-bfb8-411c-9075-eef2c8e21f65"
+            },
+            "exception": {},
+            "file": "noval_end.task",
+            "editorMode": "visual",
+            "breakpoints": {}
+        },
+        {
+            "type": "end",
+            "id": "2c3bcdb5-bfb8-411c-9075-eef2c8e21f65",
+            "rect": {
+                "x": 800,
+                "y": 750,
+                "width": 140,
+                "height": 50
+            },
+            "caption": "流程结束"
         }
     ],
     "variables": [
@@ -133,7 +166,7 @@
             "borders": [
                 {
                     "type": "border",
-                    "selected": 1,
+                    "selected": 0,
                     "size": 250,
                     "minSize": 250,
                     "enableAutoHide": true,
@@ -194,7 +227,6 @@
                     {
                         "type": "tabset",
                         "id": "#3fb7ac22-6744-471a-8cfe-f09256bbccdd",
-                        "selected": 2,
                         "children": [
                             {
                                 "type": "tab",
@@ -209,42 +241,6 @@
                                 "enableClose": false,
                                 "className": "flexlayout__tab_button_modify",
                                 "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-flow.png"
-                            },
-                            {
-                                "type": "tab",
-                                "id": "941af8b1-9f36-11ee-8681-4f1fb5d606ec",
-                                "name": "小说搜索",
-                                "helpText": "C:\\Users\\wuchonghua\\Desktop\\Person\\study\\RPA\\小说\\novel-rpa\\流程块.task",
-                                "component": "taskNodeEditor",
-                                "config": {
-                                    "selfControl": true,
-                                    "id": "941af8b1-9f36-11ee-8681-4f1fb5d606ec",
-                                    "type": "task",
-                                    "selector": [
-                                        "941af8b1-9f36-11ee-8681-4f1fb5d606ec"
-                                    ]
-                                },
-                                "enableClose": true,
-                                "className": "",
-                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
-                            },
-                            {
-                                "type": "tab",
-                                "id": "1f2aff03-9e3e-4e5f-bd18-0bcceb353056",
-                                "name": "小说章节",
-                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\novel-rpa\\noval_chapter.task",
-                                "component": "taskNodeEditor",
-                                "config": {
-                                    "selfControl": true,
-                                    "id": "1f2aff03-9e3e-4e5f-bd18-0bcceb353056",
-                                    "type": "task",
-                                    "selector": [
-                                        "1f2aff03-9e3e-4e5f-bd18-0bcceb353056"
-                                    ]
-                                },
-                                "enableClose": true,
-                                "className": "",
-                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
                             }
                         ],
                         "active": true
@@ -281,8 +277,8 @@
     },
     "flowConfig": {
         "scrollbarPosition": {
-            "left": 1686.6666259765625,
-            "top": 1371.3333740234375
+            "left": 1638,
+            "top": 1319
         }
     }
 }

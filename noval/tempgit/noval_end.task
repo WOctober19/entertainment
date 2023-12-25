@@ -1,0 +1,2 @@
+Dim iRet
+iRet = Database.ExecuteSQL(objDatabase ,"update novel set status = 1 where id = ", {"args": []})
