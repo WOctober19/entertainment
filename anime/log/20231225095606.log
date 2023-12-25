@@ -1,0 +1,7 @@
+[2023/12/25 9:56:06][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\
+[2023/12/25 9:56:06][INFO][流程块.task][0] 流程 流程块.task 开始运行
+[2023/12/25 9:56:08][ERROR][流程块.task][4] 运行发生错误，流程中止
+错误信息如下：
+流程块.task 第4行：模块 Database.QueryOne 命令出错：QueryOne 异常：
+"DBM" type not valid
+[2023/12/25 9:56:08][INFO][流程块.task][0] C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\流程块.task 运行已结束

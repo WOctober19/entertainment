@@ -57,6 +57,22 @@
             "file": "流程块1.task",
             "editorMode": "visual",
             "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d",
+            "rect": {
+                "x": 1209,
+                "y": 415,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "公共模块",
+            "next": {},
+            "exception": {},
+            "file": "PublicBlock.task",
+            "editorMode": "visual",
+            "breakpoints": {}
         }
     ],
     "variables": [
@@ -68,6 +84,11 @@
         {
             "name": "g_db",
             "value": "null",
+            "type": "none"
+        },
+        {
+            "name": "g_anime_first",
+            "value": "[]",
             "type": "none"
         }
     ],
@@ -119,7 +140,7 @@
                 },
                 {
                     "type": "border",
-                    "selected": 1,
+                    "selected": 0,
                     "size": 280,
                     "minSize": 280,
                     "location": "right",
@@ -165,7 +186,7 @@
                                     "id": "8cd75550-a0d3-11ee-8814-1fc85a00a16d"
                                 },
                                 "enableClose": false,
-                                "className": "flexlayout__tab_button_modify",
+                                "className": "",
                                 "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-flow.png"
                             },
                             {
@@ -198,6 +219,24 @@
                                     "type": "task",
                                     "selector": [
                                         "5006de4c-43ce-4e93-a84e-b0366f50d62d"
+                                    ]
+                                },
+                                "enableClose": true,
+                                "className": "",
+                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
+                            },
+                            {
+                                "type": "tab",
+                                "id": "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d",
+                                "name": "公共模块",
+                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\entertainment\\entertainment\\anime\\PublicBlock.task",
+                                "component": "taskNodeEditor",
+                                "config": {
+                                    "selfControl": true,
+                                    "id": "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d",
+                                    "type": "task",
+                                    "selector": [
+                                        "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d"
                                     ]
                                 },
                                 "enableClose": true,
