@@ -90,6 +90,11 @@
             "name": "g_anime_first",
             "value": "[]",
             "type": "none"
+        },
+        {
+            "name": "g_anime",
+            "value": "[]",
+            "type": "none"
         }
     ],
     "layout": {
@@ -275,5 +280,11 @@
         },
         "type": "flow",
         "version": "1.0.20"
+    },
+    "flowConfig": {
+        "scrollbarPosition": {
+            "left": 1346,
+            "top": 536.6666870117188
+        }
     }
 }
