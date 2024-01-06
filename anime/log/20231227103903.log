@@ -1,0 +1,9 @@
+[2023/12/27 10:39:03][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\
+[2023/12/27 10:39:03][INFO][流程块1.task][0] 流程 流程块1.task 开始运行
+[2023/12/27 10:39:06][ERROR][流程块1.task][12] 运行发生错误，流程中止
+错误信息如下：
+流程块1.task 第12行：模块 WebBrowserPlugin.UIRobotWebBrowser.Download 命令出错：调用的目标发生了异常。
+下载文件出错信息：System.Net.WebException: 远程服务器返回错误: (403) 已禁止。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 WebBrowserPlugin.HttpFileDownload.DeownloadFile(String strFileName, String url, notify nt)
+[2023/12/27 10:39:06][INFO][流程块1.task][0] C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\流程块1.task 运行已结束

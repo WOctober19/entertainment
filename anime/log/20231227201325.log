@@ -1,0 +1,6 @@
+[2023/12/27 20:13:25][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\
+[2023/12/27 20:13:25][INFO][main.prj][0] 流程 main.prj 开始运行
+[2023/12/27 20:13:25][INFO][main.prj][0] 进入流程块“动漫搜索”
+[2023/12/27 20:13:45][INFO][main.prj][0] 进入流程块“动漫入库”
+[2023/12/27 20:26:22][INFO][main.prj][0] 进入流程块“动漫下载”
+[2023/12/27 20:33:39][INFO][main.prj][0] C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\main.prj 运行已结束

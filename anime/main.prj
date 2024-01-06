@@ -25,19 +25,19 @@
             "id": "8cd77c60-a0d3-11ee-8814-1fc85a00a16d",
             "rect": {
                 "x": 772,
-                "y": 300,
+                "y": 310,
                 "width": 196,
                 "height": 64
             },
             "next": {
-                "refId": "",
+                "refId": "35101be7-9956-4204-a4fb-bc21ed997460",
                 "vertices": []
             },
             "exception": {
                 "refId": "",
                 "vertices": []
             },
-            "file": "流程块.task",
+            "file": "anime_search.task",
             "caption": "动漫搜索",
             "editorMode": "visual",
             "breakpoints": {}
@@ -55,7 +55,7 @@
             "next": {},
             "exception": {},
             "file": "流程块1.task",
-            "editorMode": "visual",
+            "editorMode": "sourceCode",
             "breakpoints": {}
         },
         {
@@ -71,6 +71,76 @@
             "next": {},
             "exception": {},
             "file": "PublicBlock.task",
+            "editorMode": "visual",
+            "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "35101be7-9956-4204-a4fb-bc21ed997460",
+            "rect": {
+                "x": 772,
+                "y": 435,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "动漫入库",
+            "next": {
+                "vertices": [],
+                "refId": "c5d0c5b1-3602-4ba7-8542-f2f263a0cf79"
+            },
+            "exception": {},
+            "file": "anime_insert.task",
+            "editorMode": "visual",
+            "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "c5d0c5b1-3602-4ba7-8542-f2f263a0cf79",
+            "rect": {
+                "x": 772,
+                "y": 564,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "动漫下载",
+            "next": {
+                "vertices": [],
+                "refId": "43b6d461-006c-491c-bed8-ba88cec21233"
+            },
+            "exception": {},
+            "file": "anime_download.task",
+            "editorMode": "visual",
+            "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "7d7fa4d3-0911-4a69-996b-ccfee590f0cf",
+            "rect": {
+                "x": 1210,
+                "y": 600,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "放入COS存储",
+            "next": {},
+            "exception": {},
+            "file": "anime_cos.task",
+            "editorMode": "sourceCode",
+            "breakpoints": {}
+        },
+        {
+            "type": "task",
+            "id": "43b6d461-006c-491c-bed8-ba88cec21233",
+            "rect": {
+                "x": 772,
+                "y": 720,
+                "width": 196,
+                "height": 64
+            },
+            "caption": "放入阿里云盘",
+            "next": {},
+            "exception": {},
+            "file": "anime_ali.task",
             "editorMode": "visual",
             "breakpoints": {}
         }
@@ -117,7 +187,7 @@
             "borders": [
                 {
                     "type": "border",
-                    "selected": 1,
+                    "selected": 0,
                     "size": 250,
                     "minSize": 250,
                     "enableAutoHide": true,
@@ -178,7 +248,7 @@
                     {
                         "type": "tabset",
                         "id": "#d4ccf634-04d7-4dc9-8a87-aaa9235eb24d",
-                        "selected": 1,
+                        "weight": 147.2340425531915,
                         "children": [
                             {
                                 "type": "tab",
@@ -196,27 +266,9 @@
                             },
                             {
                                 "type": "tab",
-                                "id": "8cd77c60-a0d3-11ee-8814-1fc85a00a16d",
-                                "name": "动漫搜索",
-                                "helpText": "C:\\Users\\wuchonghua\\Documents\\UiBot\\creator\\Projects\\动漫\\流程块.task",
-                                "component": "taskNodeEditor",
-                                "config": {
-                                    "selfControl": true,
-                                    "id": "8cd77c60-a0d3-11ee-8814-1fc85a00a16d",
-                                    "type": "task",
-                                    "selector": [
-                                        "8cd77c60-a0d3-11ee-8814-1fc85a00a16d"
-                                    ]
-                                },
-                                "enableClose": true,
-                                "className": "",
-                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
-                            },
-                            {
-                                "type": "tab",
                                 "id": "5006de4c-43ce-4e93-a84e-b0366f50d62d",
                                 "name": "测试",
-                                "helpText": "C:\\Users\\wuchonghua\\Documents\\UiBot\\creator\\Projects\\动漫\\流程块1.task",
+                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\entertainment\\entertainment\\anime\\流程块1.task",
                                 "component": "taskNodeEditor",
                                 "config": {
                                     "selfControl": true,
@@ -232,16 +284,34 @@
                             },
                             {
                                 "type": "tab",
-                                "id": "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d",
-                                "name": "公共模块",
-                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\entertainment\\entertainment\\anime\\PublicBlock.task",
+                                "id": "7d7fa4d3-0911-4a69-996b-ccfee590f0cf",
+                                "name": "放入COS存储",
+                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\entertainment\\entertainment\\anime\\anime_cos.task",
                                 "component": "taskNodeEditor",
                                 "config": {
                                     "selfControl": true,
-                                    "id": "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d",
+                                    "id": "7d7fa4d3-0911-4a69-996b-ccfee590f0cf",
                                     "type": "task",
                                     "selector": [
-                                        "9fe372de-aeb0-4cc4-a269-3cd7726d7b8d"
+                                        "7d7fa4d3-0911-4a69-996b-ccfee590f0cf"
+                                    ]
+                                },
+                                "enableClose": true,
+                                "className": "",
+                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
+                            },
+                            {
+                                "type": "tab",
+                                "id": "43b6d461-006c-491c-bed8-ba88cec21233",
+                                "name": "放入阿里云盘",
+                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\entertainment\\entertainment\\anime\\anime_ali.task",
+                                "component": "taskNodeEditor",
+                                "config": {
+                                    "selfControl": true,
+                                    "id": "43b6d461-006c-491c-bed8-ba88cec21233",
+                                    "type": "task",
+                                    "selector": [
+                                        "43b6d461-006c-491c-bed8-ba88cec21233"
                                     ]
                                 },
                                 "enableClose": true,
@@ -254,7 +324,8 @@
                     {
                         "type": "tabset",
                         "id": "buttom",
-                        "height": 200,
+                        "weight": 52.765957446808514,
+                        "height": 248,
                         "enableDrop": false,
                         "enableDrag": false,
                         "enableDivide": false,
@@ -283,8 +354,8 @@
     },
     "flowConfig": {
         "scrollbarPosition": {
-            "left": 1346,
-            "top": 536.6666870117188
+            "left": 959,
+            "top": 468
         }
     }
 }

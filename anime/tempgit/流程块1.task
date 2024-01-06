@@ -1,6 +1,22 @@
+hWeb = WebBrowser.Create("chrome","https://www.aliyundrive.com/drive/file/backup",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
+For Each value In g_anime
+Mouse.Action(@ui"块级元素<div>","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"块级元素<div>_新建文件夹","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.InputText(@ui"输入控件<input>_新建文件夹","1111111",true,20,10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+Mouse.Action(@ui"按钮<button>_确定","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Next
 
 
-Dim sRet
-sRet = UiElement.GetAttribute(@ui"视频<video>_6","src",{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
-TracePrint($PrevResult)
-WebBrowser.Download(hWeb,sRet,'''C:\Users\20831\Desktop\rpa\entertainment\第一集''',true,300000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
+For Each value In g_anime
+Mouse.Action(@ui"块级元素<div>_搜索云盘内文件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.InputText(@ui"输入控件<input>4",value[0],true,20,10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+Mouse.Action(@ui"列表项<li>_1111","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"列表项<li>_上传文件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 1000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"窗口_地址:C:\\Users\\20831\\Desktop\\rpa\\entertainment\\进击的5","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "TopRight", "iCursorOffsetX": -18, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.Input("C:\\Users\\20831\\Desktop\\rpa\\entertainment\\"+value[0],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "message"})
+Keyboard.Press("Enter", "press", [],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "simulate"})
+Mouse.Action(@ui"窗口","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.Press("A", "press", ["Ctrl"],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "simulate"})
+Mouse.Action(@ui"窗口_打开(O)1","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Delay(120000)
+Next

@@ -1,0 +1,17 @@
+Dim iRet, download_link = "",dRet
+For Each index, value In g_anime
+	If value[3] <> []
+		For Each ind, val In value[3]
+			iRet = WebBrowser.GoURL(g_hWeb, val[1], true, {}, 30000, {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200})
+			
+            Delay(5000)
+
+
+download_link = UiElement.GetAttribute(@ui"视频<video>_6", "src", {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200})
+			Mouse.Action(@ui"use","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+iRet = Database.ExecuteSQL(g_db, "insert into gather(title, gather_number, url, anime_id) values (%s, %s, %s, %s)", {"args": [value[0],ind+1,download_link,value[1]]})
+Delay(Math.Int(Rnd()*500000))
+		Next 
+	End If
+iRet = Database.ExecuteSQL(g_db ,"update anime set status = 1 where id = %s", {"args": [value[1]]})
+Next

@@ -1,0 +1,10 @@
+[2023/12/27 19:44:25][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\
+[2023/12/27 19:44:25][INFO][main.prj][0] 流程 main.prj 开始运行
+[2023/12/27 19:44:25][INFO][main.prj][0] 进入流程块“动漫搜索”
+[2023/12/27 19:44:41][INFO][main.prj][0] 进入流程块“动漫入库”
+[2023/12/27 19:52:41][INFO][main.prj][0] 进入流程块“动漫下载”
+[2023/12/27 19:57:42][ERROR][anime_download.task][12] 运行发生错误，流程中止
+错误信息如下：
+anime_download.task 第12行：模块 WebBrowserPlugin.UIRobotWebBrowser.Download 命令出错：调用的目标发生了异常。
+文件正在下载中...
+[2023/12/27 19:57:42][INFO][main.prj][0] C:\Users\20831\Desktop\rpa\entertainment\entertainment\anime\main.prj 运行已结束

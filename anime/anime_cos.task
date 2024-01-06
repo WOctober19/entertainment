@@ -1,0 +1,21 @@
+Dim iRet
+iRet = WebBrowser.GoURL(g_hWeb,"https://console.cloud.tencent.com/cos/bucket?bucket=jugments-1300667857&region=ap-shanghai&isPublic=true",true,{},30000,{"bContinueOnError":false,"iDelayAfter":1000,"iDelayBefore":200})
+bRet = UiElement.Exists(@ui"链接<a>_QQ",{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
+If bRet 
+
+Mouse.Action(@ui"链接<a>_QQ","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 3000, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"文本<span>","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+End If
+For Each value In g_anime
+
+Mouse.Action(@ui"按钮<button>_上传文件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"按钮<button>_选择文件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"窗口_地址:C:\\Users\\20831\\Desktop\\rpa\\entertainment\\进击的5","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "TopRight", "iCursorOffsetX": -18, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.Input("C:\\Users\\20831\\Desktop\\rpa\\entertainment\\"+value[0],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "message"})
+Keyboard.Press("Enter", "press", [],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "simulate"})
+Mouse.Action(@ui"窗口","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.Press("A", "press", ["Ctrl"],{"iDelayAfter": 300, "iDelayBefore": 200, "sSimulate": "simulate"})
+Mouse.Action(@ui"窗口_打开(O)1","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"按钮<button>_上传","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Delay(120000)
+Next

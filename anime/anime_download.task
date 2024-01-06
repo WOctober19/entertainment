@@ -1,0 +1,21 @@
+Dim animeDownloadList=[],iRet,bRet
+animeDownloadList = Database.QueryAll(g_db ,"select gather_number, url, id, title from gather where status = 0" ,{"rdict": false, "args": []})
+For Each value In g_anime
+
+bRet = File.FolderExists('''C:\Users\20831\Desktop\rpa\entertainment\'''+value[0])
+If Not bRet 
+File.CreateFolder('''C:\Users\20831\Desktop\rpa\entertainment\'''+value[0])
+End If
+Next
+For Each value In animeDownloadList
+bRet = File.FileExists('''C:\Users\20831\Desktop\rpa\entertainment\'''+value[3]+'''\第'''+value[3]+value[0]+'''集.mp4''')
+If Not bRet 
+
+    TracePrint(value)
+    WebBrowser.Download(g_hWeb,value[1],'''C:\Users\20831\Desktop\rpa\entertainment\'''+value[3]+'''\第'''+value[3]+value[0]+'''集.mp4''',true,300000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
+    
+    // sRet = HTTP.GetFile(value[1], '''C:\Users\20831\Desktop\rpa\entertainment\第'''+value[0]+'''集.mp4''', {}, 60000)
+    Delay(100000)
+iRet = Database.ExecuteSQL(g_db ,"update gather set status = 1 where id = %s", {"args": [value[2]]})
+End If
+Next
